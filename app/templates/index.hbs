@@ -1,14 +1,8 @@
-<header class="business-header">
-  <div class="jumbotron" id="mainHeader">
-    <div class="container-fluid" id="headerContent">
-      <h2 class ="header-text" id="headerLogoText"></h2>
-      <img class="cityHackerLogo" src="/media/images/ClearLogo.png" id="logoJumbotron">
-      <div class="row" id="doMore">
-        <div class="col-sm-12">
-          <h3 class="doMoreText">
-          </h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+    <ul id="musician-list">  
+    {{#each model as |musicin|}}
+        <li class="completed">
+            <input type="checkbox" class="toggle">
+            <label>{{musician.title}}</label><button class="destroy"></button>
+        </li>
+    {{/each}}
+</ul>
