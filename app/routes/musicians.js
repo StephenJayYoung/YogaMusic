@@ -4,11 +4,15 @@ export default Ember.Route.extend({
     model() {
         let musicians = [
             {
-                title: "musician1",
+                title: "Musician1",
                 complete: false,
             },
             {
-                title: "Yoga Mystic Music",
+                title: "Musician2",
+                complete: false,
+            },
+            {
+                title: "Musician3",
                 complete: false,
             }
         ];
